@@ -16,7 +16,7 @@ const index = (props: Props) => {
       <section className="lg:px-[135px] md:px-5 sm:px-5 flex pt-20 w-full h-full">
         <SideBar />
         <div className="w-full h-full py-12 flex flex-col justify-between">
-          <button className="flex items-center justify-between w-full md:hidden bg-white rounded-lg font-regular text-gray-400 p-5 active:text-black">
+          <button className="flex items-center justify-between w-full md:hidden bg-white rounded-2xl font-regular text-gray-400 p-5 active:text-black">
             <div className="flex items-center">
               <FiUser fontSize={20} />
               <span className="ml-3 text-md">My Profile</span>
