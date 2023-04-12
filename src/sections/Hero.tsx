@@ -1,4 +1,6 @@
+import Link from "next/link";
 import homepageStyle from "../styles/homepage.module.css";
+import { MdArrowForward } from "react-icons/md";
 
 const stats: any = [
   { id: 1, name: "Transactions every 24 hours", value: "44 million" },
@@ -8,35 +10,35 @@ const stats: any = [
 
 const Hero = () => {
   return (
-    <section className="wrapper">
+    <section className="px-32 pt-28 bg-[#F1F3F8] w-full">
       <div className={homepageStyle.hero_wrapper}>
         <div className={homepageStyle.hero_wrapper_overlay}>
-          <div className="relative isolate px-6 pt-14 lg:px-8">
-            <div className="max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="relative isolate h-[35rem] w-full">
+            <div className="w-full h-full px-24 flex items-center">
               <div className="text-left">
-                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                  Get Started & Build Your Profile
+                <h1 className="text-6xl tracking-wide font-semibold leading-tight text-white">
+                  Get Started & <br /> Build Your Profile
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-white">
+                <p className="text-md mt-2 leading-8 text-white">
                   We build beautiful digital products that add more value to
                   your product
                 </p>
-                <div className="mt-10 gap-x-6">
-                  <a
-                    href="#"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                <div className="mt-5   sm:w-[40%]">
+                  <Link
+                    href="/"
+                    className="rounded-full flex gap-3 items-center justify-between bg-[#2DC7DF] px-6 py-3 sm:text-md font-semibold text-white border-none outline-none"
                   >
-                    Build your profile
-                  </a>
+                    Build your Profile <MdArrowForward fontSize={16} />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-white py-24 sm:py-32">
+      <div className=" py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
             {stats.map((stat: any) => (
               <div
                 key={stat.id}
@@ -50,7 +52,7 @@ const Hero = () => {
                 </dd>
               </div>
             ))}
-          </dl>
+          </div>
         </div>
       </div>
     </section>

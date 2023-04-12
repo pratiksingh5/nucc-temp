@@ -5,7 +5,7 @@ import { RiSearch2Line, RiMenuFill } from "react-icons/ri";
 
 const Navbar = () => {
   return (
-    <header className=" fixed w-full h-20 lg:px-[135px] md:px-5 sm:px-5 bg-white">
+    <header className=" fixed w-full h-20 lg:px-[135px] md:px-5 sm:px-5 bg-white z-50">
       <nav className="md:flex items-center justify-between h-full w-full sm:hidden">
         <Link href="/">
           <Image src="/Logo.jpeg" width={200} height={100} alt="logo" />
