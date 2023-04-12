@@ -11,7 +11,7 @@ import {
 
 const SideBar = () => {
   return (
-    <aside className=" w-1/4 h-full flex items-center">
+    <aside className=" w-1/4 h-full items-center lg:flex md:flex sm:hidden">
       <div className=" w-11/12 h-[90%] py-3 rounded-2xl bg-white flex flex-col items-center justify-between">
         <div className="flex flex-col w-full h-full items-center">
           <button className="flex items-center justify-between h-10 rounded-lg font-regular text-gray-400 w-5/6 active:text-black">
