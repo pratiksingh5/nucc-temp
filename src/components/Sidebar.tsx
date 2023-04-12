@@ -21,11 +21,7 @@ const SideBar = () => {
             </div>
             <IoIosArrowDown fontSize={20} />
           </button>
-          <button
-            id="dropdownDefaultButton"
-            data-dropdown-toggle="dropdown"
-            className="flex items-center justify-between h-10 rounded-lg font-regular text-gray-400 w-5/6 active:text-black"
-          >
+          <button className="flex items-center justify-between h-10 rounded-lg font-regular text-gray-400 w-5/6 active:text-black">
             <div className="flex items-center">
               <FiUser fontSize={20} />
               <span className="ml-3 text-md ">Profile</span>
