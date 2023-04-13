@@ -10,23 +10,23 @@ const stats: any = [
 
 const Hero = () => {
   return (
-    <section className="px-32 pt-28 bg-[#F1F3F8] w-full">
+    <section className="lg:px-32 sm:px-5  pt-28 bg-[#F1F3F8] w-full">
       <div className={homepageStyle.hero_wrapper}>
         <div className={homepageStyle.hero_wrapper_overlay}>
           <div className="relative isolate h-[35rem] w-full">
-            <div className="w-full h-full px-24 flex items-center">
+            <div className="w-full h-full lg:pl-24 md:pl-14 sm:px-6 flex items-center">
               <div className="text-left">
-                <h1 className="text-6xl tracking-wide font-semibold leading-tight text-white">
+                <h1 className="lg:text-6xl md:text-4xl sm:text-2xl tracking-wide font-semibold leading-tight text-white">
                   Get Started & <br /> Build Your Profile
                 </h1>
-                <p className="text-md mt-2 leading-8 text-white">
+                <p className="text-md mt-2 leading-8 text-white text">
                   We build beautiful digital products that add more value to
                   your product
                 </p>
-                <div className="mt-5   sm:w-[40%]">
+                <div className="mt-5 md:max-w-[45%] sm:max-w-[50%]">
                   <Link
                     href="/"
-                    className="rounded-full flex gap-3 items-center justify-between bg-[#2DC7DF] px-6 py-3 sm:text-md font-semibold text-white border-none outline-none"
+                    className="rounded-full flex md:gap-3 sm:gap-1 items-center justify-between bg-[#2DC7DF] px-6 py-3 md:text-lg sm:text-xs font-semibold text-white border-none outline-none"
                   >
                     Build your Profile <MdArrowForward fontSize={16} />
                   </Link>

@@ -5,7 +5,7 @@ import { MdArrowForward } from "react-icons/md";
 
 const Courses = () => {
   return (
-    <section className="wrapper">
+    <section className="px-20 mb-20">
       <h1 className="text-center font-semibold mb-16 text-5xl">
         Unlimited access to <span className="text-[#2DC7DF]">100+ Courses</span>
         .
