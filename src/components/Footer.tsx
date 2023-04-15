@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
-    <footer>Footer</footer>
-  )
-}
+    <footer className="px-32 bg-[#1C1E1F]">
+      <p className="text-white">jashdkfdlldsgddslfhsd</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

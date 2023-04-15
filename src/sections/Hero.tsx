@@ -36,18 +36,18 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className=" py-24 sm:py-32">
+      <div className=" py-24 md:py-32 sm:py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-8 sm:gap-y-5 text-center md:grid-cols-3">
             {stats.map((stat: any) => (
               <div
                 key={stat.id}
-                className="mx-auto flex max-w-xs flex-col gap-y-4"
+                className="mx-auto flex max-w-xs flex-col sm:gap-y-2"
               >
                 <dt className="text-base leading-7 text-gray-600">
                   {stat.name}
                 </dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 lg:text-5xl md:text-4xl sm:text-2xl">
                   {stat.value}
                 </dd>
               </div>
