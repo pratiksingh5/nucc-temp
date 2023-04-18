@@ -1,4 +1,4 @@
-import Course from "@/components/Course";
+import HomePageCourse from "@/components/Course";
 import homepageStyle from "../styles/homepage.module.css";
 import Link from "next/link";
 import { MdArrowForward } from "react-icons/md";
@@ -11,10 +11,11 @@ const Courses = () => {
         .
       </h1>
       <div className=" flex flex-wrap mt-6 items-center justify-evenly gap-10">
-        <Course />
-        <Course />
-        <Course />
-        <Course />
+       <HomePageCourse/>
+       <HomePageCourse/>
+       <HomePageCourse/>
+       <HomePageCourse/>
+
       </div>
       <div className="flex justify-center mt-14">
         <Link

@@ -30,38 +30,45 @@ const Testimonial = () => {
         </div>
       </div>
       <div className="lg:w-[55%] sm:w-full flex flex-wrap items-center justify-start gap-10 md:px-16 mt-10">
-        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center">
+        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center relative">
           <Image
-            className="w-16 h-16 bg-white rounded-full"
-            src={""}
+            className="w-16 h-16 bg-white rounded-full object-cover"
+            src="/person.jpg"
+           
+            alt="profile"
+            fill
+          />
+        </div>
+        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center relative">
+          <Image
+            className="w-16 h-16 bg-white rounded-full object-cover"
+            src="/person.jpg"
+            alt="profile"
+            fill
+   
+          />
+        </div>
+        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center relative">
+          <Image
+            className="w-16 h-16 bg-white rounded-full object-cover"
+            src="/person.jpg"
+            fill
             alt="profile"
           />
         </div>
-        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center">
+        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center relative">
           <Image
-            className="w-16 h-16 bg-white rounded-full"
-            src={""}
+            className="w-16 h-16 bg-white rounded-full object-cover"
+            fill
             alt="profile"
+            src="/person.jpg"
           />
         </div>
-        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center">
+        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center relative">
           <Image
-            className="w-16 h-16 bg-white rounded-full"
-            src={""}
-            alt="profile"
-          />
-        </div>
-        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center">
-          <Image
-            className="w-16 h-16 bg-white rounded-full"
-            src={""}
-            alt="profile"
-          />
-        </div>
-        <div className="w-20 h-20 border-[#2DC7DF] border-solid border-2 rounded-full flex items-center justify-center">
-          <Image
-            className="w-16 h-16 bg-white rounded-full"
-            src={""}
+            className="w-16 h-16 bg-white rounded-full object-cover"
+            src="/person.jpg"
+            fill
             alt="profile"
           />
         </div>

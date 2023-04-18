@@ -20,30 +20,30 @@ const Navbar = () => {
   };
 
   return (
-    <header className=" fixed w-full h-20 lg:px-[135px] md:px-5 sm:px-5 bg-white z-10">
-      <nav className="md:flex items-center justify-between h-full w-full sm:hidden">
+    <header className=" fixed w-full h-20 px-[8%] bg-white z-10">
+      <nav className=" md:flex items-center justify-between h-full w-full hidden">
         <Link href="/">
-          <Image src="/Logo.jpeg" width={200} height={100} alt="logo" />
+          <Image src="/Logo.png" width={200} height={100} alt="logo" />
         </Link>
         <div className="flex gap-10">
           <ul className="flex items-center gap-10">
             <li>
-              <Link className=" text-gray-600 active:text-gray-950" href="/">
+              <Link  href="/" className=" text-gray-600 active:text-gray-950">
                 Home
               </Link>
             </li>
             <li>
-              <Link className=" text-gray-600 active:text-gray-950" href="/">
+              <Link href="/courses" className=" text-gray-600 active:text-gray-950">
                 Courses
               </Link>
             </li>
             <li>
-              <Link className=" text-gray-600 active:text-gray-950" href="/">
+              <Link href="/assessments"  className=" text-gray-600 active:text-gray-950" >
                 Assessments
               </Link>
             </li>
             <li>
-              <Link className=" text-gray-600 active:text-gray-950" href="/">
+              <Link href="/jobs" className=" text-gray-600 active:text-gray-950">
                 Jobs
               </Link>
             </li>
@@ -54,7 +54,7 @@ const Navbar = () => {
         </div>
       </nav>
       <nav className="md:hidden flex items-center justify-between h-full w-full">
-        <Link href="/">
+        <Link href="/profile">
           <Image src={logo} width={160} height={80} alt="logo" />
         </Link>
         <div className=" flex items-center gap-5 font-bold text-gray-600">
@@ -82,7 +82,7 @@ const Navbar = () => {
         >
           <div>
             <div className=" flex w-full h-auto items-center justify-between">
-              <Link href="/" onClick={() => setNavToggle(false)}>
+              <Link href="/profile" onClick={() => setNavToggle(false)}>
                 <Image src={logo} width={160} height={80} alt="/" />
               </Link>
               <div

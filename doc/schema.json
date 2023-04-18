@@ -1,0 +1,51 @@
+{
+	"personalInformation": {
+		"firstName": "Wesley",
+		"lastName": "Mon",
+		"emailAddress": "wpeck@amazon.com",
+		"mobile": 854763210,
+		"aboutMe": "anything"
+	},
+	"Address": {
+		"house/flatNo.": "b2301",
+		"line1": "Line1",
+		"line2": "",
+		"city": "city name",
+		"state": "state name",
+		"country": "",
+		"pincode": 123456
+	},
+	"educationalDetails": [
+		{
+			"courseName": "BSc",
+			"institute": "",
+			"university": "abc",
+			"yearOfPassing": 2000,
+			"cgpa": 2.56
+		},
+		{
+			"courseName": "Msc",
+			"institute": "",
+			"university": "abc",
+			"yearOfPassing": 2000,
+			"cgpa": 2.56
+		}
+	],
+	"resumeURL": "location",
+	"certification": {
+		"certificateID": "Wesley",
+		"certificateName": "Mon",
+		"URL": "https://nickolas360.preview.softr.app/certifications",
+		"certificatePic": "URL"
+	},
+	"projects": [
+		{
+			"projectName": "Msc",
+			"description": "",
+			"organisaiton": "abc",
+			"somain": "",
+			"teamSize": 2,
+			"Duration": "2 Months"
+		}
+	]
+}
