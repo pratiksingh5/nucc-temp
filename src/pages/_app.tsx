@@ -6,7 +6,7 @@ import { Amplify } from "aws-amplify";
 import awsExports from "../aws-exports";
 import "../styles/globals.css";
 
-// Amplify.configure({ ...awsExports, ssr: true });
+Amplify.configure({ ...awsExports, ssr: true });
 
 const open_sans = Open_Sans({ subsets: ['latin'] })
 

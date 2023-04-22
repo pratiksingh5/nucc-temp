@@ -48,9 +48,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          <Link href="/profile">
           <div className="flex shadow-md cursor-pointer items-center justify-center h-10 w-10 rounded-full object-cover">
             <FaUser color="gray" height={100} />
           </div>
+          </Link>
         </div>
       </nav>
       <nav className="md:hidden flex items-center justify-between h-full w-full">

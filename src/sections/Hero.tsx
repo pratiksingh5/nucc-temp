@@ -37,8 +37,15 @@ const Hero = () => {
         </div>
       </div>
       <div className=" py-24 md:py-32 sm:py-10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-x-8 sm:gap-y-5 text-center md:grid-cols-3">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 gap-x-8 sm:gap-y-5 text-center md:grid-cols-4">
+            <div className="mx-auto flex max-w-xs flex-col sm:gap-y-2">
+              <h2 className="text-left text-black-600 font-bold">Lorem ipsum</h2>
+              <h6 className="text-left text-slate-900 font-thin">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </h6>
+            </div>
             {stats.map((stat: any) => (
               <div
                 key={stat.id}

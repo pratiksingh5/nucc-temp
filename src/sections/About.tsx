@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="wrapper">
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <section className="wrapper bg-[#2DC7DF]">
+      <div className="overflow-hidden  py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4 flex flex-col justify-center">
@@ -21,7 +21,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <Image src="/about.png" alt="about" width={400} height={400} />
+            <Image src="/about-new.png" alt="about" width={400} height={400} />
           </div>
         </div>
       </div>

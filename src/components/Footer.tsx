@@ -2,14 +2,27 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font ">
-      <div className="container py-24 mx-auto px-14">
+    <footer className="bg-slate-900 text-neutral-50 py-14 p-[7%]">
+      <div className="container lg-py-24 lg-mx-auto lg-px-14">
         <div className="flex flex-wrap md:text-left text-center order-first">
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <Image src="/Logo.png" alt="logo" width="200" height="60"/>
+          <div className="lg:w-full md:w-1/2 w-full px-4 h-28">
+            <Image src="/Logo.png" alt="logo" width="200" height="60" style={{backgroundColor:"#fff"}}/>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <nav className="list-none mb-10">
+              <li>
+                <a className="text-white-600 hover:text-gray-800">123, lorem ipsum, sit dolar, 12345</a>
+              </li>
+              <li>
+                <a className="text-white-600 hover:text-gray-800">developers@mucc.com</a>
+              </li>
+              <li>
+                <a className="text-white-600 hover:text-gray-800">+91 1234567890</a>
+              </li>
+            </nav>
+          </div>
+          <div className="lg:w-1/4 md:w-1/2 w-full px-3">
+            <h2 className="title-font font-medium text-white-900 tracking-widest text-sm mb-3">
               CATEGORIES
             </h2>
             <nav className="list-none mb-10">
@@ -27,8 +40,9 @@ const Footer = () => {
               </li>
             </nav>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+
+          <div className="lg:w-1/4 md:w-1/2 w-full px-3">
+            <h2 className="title-font font-medium text-white-900 tracking-widest text-sm mb-3">
               CATEGORIES
             </h2>
             <nav className="list-none mb-10">
@@ -46,6 +60,7 @@ const Footer = () => {
               </li>
             </nav>
           </div>
+
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
               Join the Community
@@ -68,7 +83,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-slate-900 text-neutral-50">
-        <div className="container px-14 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <div className="lg-px-14 py-6 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center">
          
             <span className="ml-3 text-xl">NUCC Career Center</span>

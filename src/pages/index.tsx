@@ -18,35 +18,35 @@ import { GetStaticProps } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// const components = {
-// 	Header() {
-// 		const { tokens } = useTheme();
+const components = {
+	Header() {
+		const { tokens } = useTheme();
 
-// 		return (
-// 			<View padding={tokens.space.large}>
-// 				<div className='flex justify-center'>
-// 					<Image
-// 						alt='Amplify logo'
-// 						src='/logo.png'
-// 						height={144} // Desired size with correct aspect ratio
-// 						width={244}
-// 					/>
-// 				</div>
-// 			</View>
-// 		);
-// 	},
-// };
+		return (
+			<View padding={tokens.space.large}>
+				<div className='flex justify-center'>
+					<Image
+						alt='Amplify logo'
+						src='/logo.png'
+						height={144} // Desired size with correct aspect ratio
+						width={244}
+					/>
+				</div>
+			</View>
+		);
+	},
+};
 
 function Home() {
-	// const router = useRouter();
-	// useEffect(() => {
-	// 	if (!router.isReady) return;
+	const router = useRouter();
+	useEffect(() => {
+		if (!router.isReady) return;
 
-	// 	// console.log(router);
-	// }, [router.isReady]);
+		// console.log(router);
+	}, [router.isReady]);
 	return (
 		<>
-			
+			<Authenticator components={components}>
 				<Navbar />
 				<Hero />
 				<About />
@@ -55,8 +55,8 @@ function Home() {
 				<Works />
 				<Testimonial />
 				<Banner />
-				{/* <Footer /> */}
-			
+				<Footer />
+			</Authenticator>
 		</>
 	);
 }

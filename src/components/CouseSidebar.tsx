@@ -1,7 +1,8 @@
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { Outfit } from 'next/font/google'
+import { Outfit } from 'next/font/google';
+import courseFilters from "@/helpers/filters";
 import {
   ChevronDownIcon,
   FunnelIcon,
@@ -15,49 +16,6 @@ const outfit = Outfit({
 })
 
 import Breadcrumb from "./Breadcrumb";
-const filters = [
-  {
-    id: "subject",
-    name: "Subject",
-    options: [
-      { value: "Commerce", label: "Commerce", checked: false },
-      { value: "IT", label: "IT", checked: false },
-      { value: "Science", label: "Science", checked: true },
-    ],
-  },
-  {
-    id: "skills",
-    name: "Skills",
-    options: [
-      {
-        value: "Account Management",
-        label: "Account Management",
-        checked: false,
-      },
-      { value: "Accounting", label: "Accounting", checked: false },
-      { value: "Block Chain", label: "Block Chain", checked: true },
-      {
-        value: "Amazon Web Services",
-        label: "Amazon Web Services",
-        checked: false,
-      },
-      {
-        value: "Digital Marketing",
-        label: "Digital Marketing",
-        checked: false,
-      },
-    ],
-  },
-  {
-    id: "educator",
-    name: "Educator",
-    options: [
-      { value: "Board Infinity", label: "Board Infinity", checked: false },
-      { value: "Udemy", label: "Udemy", checked: false },
-      { value: "Coursera", label: "Coursera", checked: false },
-    ],
-  },
-];
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -111,7 +69,7 @@ const CourseSideBar = () => {
 
                 {/* Filters */}
                 <form className="mt-4 border-t border-gray-200">
-                  {filters.map((section) => (
+                  {courseFilters.map((section) => (
                     <Disclosure
                       as="div"
                       key={section.id}
@@ -197,7 +155,7 @@ const CourseSideBar = () => {
           <div className="w-full grid grid-cols-1">
             {/* Filters */}
             <form className="hidden md:block w-full">
-              {filters.map((section) => (
+              {courseFilters.map((section) => (
                 <Disclosure
                   as="div"
                   key={section.id}
