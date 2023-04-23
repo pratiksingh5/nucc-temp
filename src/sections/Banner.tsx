@@ -5,10 +5,10 @@ import bannerImg from "../../public/bannerImg.svg";
 
 const Banner = () => {
   return (
-    <section className=" w-full h-full flex justify-center bg-[#F1F3F8] md:py-0 sm:pt-14 sm:px-5 ">
-      <div className=" lg:w-[55%] sm:w-full h-full md:flex sm:grid md:justify-between sm:justify-center sm:items-center gap-y-10">
-        <div className=" flex flex-col justify-center sm:items-center md:items-start gap-10 md:w-1/2 sm:w-full">
-          <h3 className="text-4xl font-semibold">
+    <section className=" w-full h-full flex justify-center bg-[#F1F3F8] md:py-10 sm:pt-0 xs:pt-14 xs:px-5 ">
+      <div className=" lg:w-[55%] xs:w-full h-full sm:flex xs:grid sm:justify-between xs:justify-center xs:items-center gap-y-10">
+        <div className=" flex flex-col justify-center xs:items-center sm:items-start gap-10 sm:w-1/2 xs:w-full">
+          <h3 className="font-semibold md:text-5xl xs:text-3xl">
             Join Over 1 Lakh+ <br /> learner
           </h3>
           <div className="flex">
@@ -20,12 +20,8 @@ const Banner = () => {
             </Link>
           </div>
         </div>
-        <div className="md:w-1/2 sm:w-full h-full flex justify-center items-end border-none">
-          <Image
-            src={bannerImg}
-            alt="bannerPhoto"
-            className="w-full"
-          />
+        <div className="sm:w-1/2 xs:w-full h-full flex justify-center items-end border-none">
+          <Image src={bannerImg} alt="bannerPhoto" className="w-full" />
         </div>
       </div>
     </section>

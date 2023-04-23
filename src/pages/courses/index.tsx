@@ -4,7 +4,6 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Outfit } from "next/font/google";
 import Course from "@/components/common/Cards/Course";
 
-
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
@@ -91,7 +90,7 @@ const index = (props: Props) => {
         </div>
         <div className="w-full flex justify-center">
           <div className="md:w-1/4 bg-[#F9F9F9] mr-10 rounded-2xl px-4 hidden md:flex overflow-hidden ">
-            <CourseSideBar />   
+            <CourseSideBar />
           </div>
           <div className="w-full ">
             <section className="text-gray-600 body-font ">

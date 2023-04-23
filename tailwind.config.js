@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
@@ -17,12 +17,14 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
+        lg: "1100px",
         md: "900px",
-        sm: "0px",
-      //   'xs': '600px',
-      // ...defaultTheme.screens,
+        sm: "600px",
+        xs: "0px",
+        //   'xs': '600px',
+        // ...defaultTheme.screens,
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

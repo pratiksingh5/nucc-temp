@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "../../public/Logo.svg";
 
 const Footer = () => {
   return (
@@ -6,18 +7,30 @@ const Footer = () => {
       <div className="container lg-py-24 lg-mx-auto lg-px-14">
         <div className="flex flex-wrap md:text-left text-center order-first">
           <div className="lg:w-full md:w-1/2 w-full px-4 h-28">
-            <Image src="/Logo.png" alt="logo" width="200" height="60" style={{backgroundColor:"#fff"}}/>
+            <Image
+              src={logo}
+              alt="logo"
+              width="200"
+              height="60"
+              style={{ backgroundColor: "#fff" }}
+            />
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <nav className="list-none mb-10">
               <li>
-                <a className="text-white-600 hover:text-gray-800">123, lorem ipsum, sit dolar, 12345</a>
+                <a className="text-white-600 hover:text-gray-800">
+                  123, lorem ipsum, sit dolar, 12345
+                </a>
               </li>
               <li>
-                <a className="text-white-600 hover:text-gray-800">developers@mucc.com</a>
+                <a className="text-white-600 hover:text-gray-800">
+                  developers@mucc.com
+                </a>
               </li>
               <li>
-                <a className="text-white-600 hover:text-gray-800">+91 1234567890</a>
+                <a className="text-white-600 hover:text-gray-800">
+                  +91 1234567890
+                </a>
               </li>
             </nav>
           </div>
@@ -66,7 +79,7 @@ const Footer = () => {
               Join the Community
             </h2>
             <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-              <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+              <div className="relative w-40 xs:w-auto xl:mr-4 lg:mr-0 xs:mr-4 mr-2">
                 <input
                   type="text"
                   id="footer-field"
@@ -83,20 +96,17 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-slate-900 text-neutral-50">
-        <div className="lg-px-14 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <div className="lg-px-14 py-6 mx-auto flex items-center xs:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center">
-         
             <span className="ml-3 text-xl">NUCC Career Center</span>
           </a>
-          <p className="text-sm text-white-500 sm:ml-6 sm:mt-0 mt-4">
+          <p className="text-sm text-white-500 xs:ml-6 xs:mt-0 mt-4">
             © 2023 Career Center
-
           </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <span className="inline-flex xs:ml-auto xs:mt-0 mt-4 justify-center xs:justify-start">
             <a className="text-white-500">
               <svg
                 fill="currentColor"
-               
                 stroke-linejoin="round"
                 stroke-width="2"
                 className="w-5 h-5"
@@ -108,7 +118,6 @@ const Footer = () => {
             <a className="ml-3text-white-500">
               <svg
                 fill="currentColor"
-               
                 stroke-linejoin="round"
                 stroke-width="2"
                 className="w-5 h-5"
@@ -121,7 +130,6 @@ const Footer = () => {
               <svg
                 fill="none"
                 stroke="currentColor"
-              
                 stroke-linejoin="round"
                 stroke-width="2"
                 className="w-5 h-5"
@@ -135,7 +143,6 @@ const Footer = () => {
               <svg
                 fill="currentColor"
                 stroke="currentColor"
-                
                 stroke-linejoin="round"
                 stroke-width="0"
                 className="w-5 h-5"

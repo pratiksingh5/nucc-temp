@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { RxDashboard } from "react-icons/rx";
 import { IoIosArrowDown } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
@@ -10,18 +10,18 @@ import {
 } from "react-icons/md";
 
 const SideBar = () => {
-  const [activeAccordion, setActiveAccordion] = useState('');
+  const [activeAccordion, setActiveAccordion] = useState("");
   const [activeButton, setActiveButton] = useState("");
 
-  const handleAccordionClick = (accordionName:string) => {
-    setActiveAccordion(activeAccordion === accordionName ? '' : accordionName);
+  const handleAccordionClick = (accordionName: string) => {
+    setActiveAccordion(activeAccordion === accordionName ? "" : accordionName);
   };
-  const handleButtonClick = (buttonName:string) => {
+  const handleButtonClick = (buttonName: string) => {
     setActiveButton(buttonName);
   };
 
   return (
-    <aside className=" w-1/4 h-full items-center lg:flex md:flex sm:hidden">
+    <aside className=" w-1/4 h-full items-center lg:flex md:flex xs:hidden">
       <div className=" w-11/12 h-[90%] py-3 rounded-2xl bg-white flex flex-col items-center justify-between">
         <div className="flex flex-col w-full h-full items-center">
           <button className="flex items-center justify-between h-10 rounded-lg font-regular text-gray-400 w-5/6 active:text-black">
@@ -32,7 +32,7 @@ const SideBar = () => {
             <IoIosArrowDown fontSize={20} />
           </button>
           <button
-            onClick={() => handleAccordionClick('profile')}
+            onClick={() => handleAccordionClick("profile")}
             className="flex items-center justify-between h-10 rounded-lg font-regular text-gray-400 w-5/6 active:text-black"
           >
             <div className="flex items-center">
@@ -41,9 +41,14 @@ const SideBar = () => {
             </div>
             <IoIosArrowDown fontSize={20} />
           </button>
-          {activeAccordion === 'profile' && (
+          {activeAccordion === "profile" && (
             <div className="w-full flex flex-col mt-2">
-              <button className={`h-10 rounded-lg font-regular text-gray-400 w-full active:text-black flex justify-start items-center px-10 ${activeButton === "about" && "bg-red-300"}`} onClick={(e)=> handleButtonClick("about")}>
+              <button
+                className={`h-10 rounded-lg font-regular text-gray-400 w-full active:text-black flex justify-start items-center px-10 ${
+                  activeButton === "about" && "bg-red-300"
+                }`}
+                onClick={(e) => handleButtonClick("about")}
+              >
                 <span className="ml-3 text-md text-left">About</span>
               </button>
               <button className="h-10 rounded-lg font-regular text-gray-400 w-full active:text-black flex justify-start items-center px-10">

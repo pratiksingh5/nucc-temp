@@ -38,46 +38,46 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 function Home() {
-	// const router = useRouter();
-	// useEffect(() => {
-	// 	if (!router.isReady) return;
+  // const router = useRouter();
+  // useEffect(() => {
+  // 	if (!router.isReady) return;
 
-	// 	// console.log(router);
-	// }, [router.isReady]);
-	return (
-		<>
-			{/* <Authenticator components={components}> */}
-				<Navbar />
-				<Hero />
-				<About />
-				<Courses />
-				<Features />
-				<Works />
-				<Testimonial />
-				<Banner />
-				<Footer />
-			{/* </Authenticator> */}
-		</>
-	);
+  // 	// console.log(router);
+  // }, [router.isReady]);
+  return (
+    <>
+      {/* <Authenticator components={components}> */}
+      <Navbar />
+      <Hero />
+      <About />
+      <Courses />
+      <Features />
+      <Works />
+      <Testimonial />
+      <Banner />
+      <Footer />
+      {/* </Authenticator> */}
+    </>
+  );
 }
 
 export const getServerSideProps: GetStaticProps = async (context) => {
-	// to test subdomain hit the testdomain.localhost:3000
-	const host = context?.req?.headers?.host as string;
-	if (host && host?.includes(".")) {
-		const part = host.split(".")?.[0];
-		console.log("part: ", part);
-		return {
-			redirect: {
-				permanent: true,
-				destination: "/" + part,
-			},
-		};
-	}
+  // to test subdomain hit the testdomain.localhost:3000
+  const host = context?.req?.headers?.host as string;
+  if (host && host?.includes(".")) {
+    const part = host.split(".")?.[0];
+    console.log("part: ", part);
+    return {
+      redirect: {
+        permanent: true,
+        destination: "/" + part,
+      },
+    };
+  }
 
-	return {
-		props: {}, // will be passed to the page component as props
-	};
+  return {
+    props: {}, // will be passed to the page component as props
+  };
 };
 
 export default Home;

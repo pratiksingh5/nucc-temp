@@ -3,24 +3,24 @@ import workImg from "../../public/workImg.svg";
 
 const Works = () => {
   return (
-    <section className="bg-[#2DC7DF] w-full h-full lg:flex sm:grid sm:gap-y-16 sm:justify-between sm:items-center lg:px-32 sm:px-5 lg:py-32 sm:py-10 mt-28">
-      <div className=" lg:w-[50%] h-full flex flex-col justify-center lg:items-start sm:items-center lg:px-4 sm:w-full">
-        <div className=" lg:w-4/5 sm:w-11/12">
-          <h3 className=" text-white lg:text-6xl sm:text-4xl pb-4 font-medium">
+    <section className="bg-[#2DC7DF] w-full h-full lg:flex xs:grid xs:gap-y-16 xs:justify-between xs:items-center lg:px-32 xs:px-5 lg:py-32 xs:py-10 mt-28">
+      <div className=" lg:w-[50%] h-full flex flex-col justify-center lg:items-start xs:items-center lg:px-4 xs:w-full">
+        <div className=" lg:w-4/5 xs:w-11/12">
+          <h3 className=" text-white lg:text-6xl xs:text-4xl pb-4 font-medium">
             How it Works
           </h3>
-          <p className="text-gray-50 pb-12 text-lg sm:text-md">
+          <p className="text-gray-50 pb-12 text-lg xs:text-md">
             Mangalore University Career Centre (MUCC) is an integrated
             employability platform, that connects the University, its Colleges,
             its Students.
           </p>
         </div>
-        <div className="lg:w-4/5 sm:w-11/12 lg:h-96 sm:h-80 bg-white rounded-2xl flex items-center justify-center">
+        <div className="lg:w-4/5 xs:w-11/12 lg:h-96 xs:h-80 bg-white rounded-2xl flex items-center justify-center">
           <Image src={workImg} alt="image" />
         </div>
       </div>
-      <div className=" lg:w-[50%] h-full flex flex-col gap-10 lg:justify-center sm:items-center lg:px-4 sm:w-full sm:mt-20 lg:mt-0">
-        <div className="lg:w-4/5 sm:w-11/12 h-full flex sm:flex-wrap gap-5">
+      <div className=" lg:w-[50%] h-full flex flex-col gap-10 lg:justify-center xs:items-center lg:px-4 xs:w-full xs:mt-20 lg:mt-0">
+        <div className="lg:w-4/5 xs:w-11/12 h-full flex xs:flex-wrap gap-5">
           <div className=" w-16 h-16 bg-white rounded-full flex justify-center items-center">
             <span className="text-[#2DC7DF] text-3xl font-medium">01</span>
           </div>
@@ -33,7 +33,7 @@ const Works = () => {
           </div>
         </div>
         <hr className="border-white w-4/5" />
-        <div className="lg:w-4/5 sm:w-11/12 h-full flex sm:flex-wrap gap-5">
+        <div className="lg:w-4/5 xs:w-11/12 h-full flex xs:flex-wrap gap-5">
           <div className=" w-16 h-16 bg-white rounded-full flex justify-center items-center">
             <span className="text-[#2DC7DF] text-3xl font-medium">02</span>
           </div>
@@ -46,7 +46,7 @@ const Works = () => {
           </div>
         </div>
         <hr className="border-white w-4/5" />
-        <div className="lg:w-4/5 sm:w-11/12 h-full flex sm:flex-wrap gap-5">
+        <div className="lg:w-4/5 xs:w-11/12 h-full flex xs:flex-wrap gap-5">
           <div className=" w-16 h-16 bg-white rounded-full flex justify-center items-center">
             <span className="text-[#2DC7DF] text-3xl font-medium">03</span>
           </div>
@@ -59,7 +59,7 @@ const Works = () => {
           </div>
         </div>
         <hr className="border-white w-4/5" />
-        <div className="lg:w-4/5 sm:w-11/12 h-full flex sm:flex-wrap gap-5">
+        <div className="lg:w-4/5 xs:w-11/12 h-full flex xs:flex-wrap gap-5">
           <div className=" w-16 h-16 bg-white rounded-full flex justify-center items-center">
             <span className="text-[#2DC7DF] text-3xl font-medium">04</span>
           </div>

@@ -14,14 +14,27 @@ import {
 import AdminTable from "@/components/tables/AdminTable";
 
 const stats = [
-  { id: 1, name: "No. of Student  who have logged in at least once", value: "4567" },
-  { id: 2, name: "No. of Student  who have logged in at least once", value: "4567" },
-  { id: 3, name: "No. of Student  who have logged in at least once", value: "4567" },
-  { id: 4, name: "No. of Student  who have logged in at least once", value: "4567" },
-
+  {
+    id: 1,
+    name: "No. of Student  who have logged in at least once",
+    value: "4567",
+  },
+  {
+    id: 2,
+    name: "No. of Student  who have logged in at least once",
+    value: "4567",
+  },
+  {
+    id: 3,
+    name: "No. of Student  who have logged in at least once",
+    value: "4567",
+  },
+  {
+    id: 4,
+    name: "No. of Student  who have logged in at least once",
+    value: "4567",
+  },
 ];
-
-
 
 function classNameNames(...classNamees: any) {
   return classNamees.filter(Boolean).join(" ");
@@ -34,7 +47,6 @@ const index = (props: Props) => {
     <div className="w-full h-screen">
       <Navbar />
       <section className="px-[8%] pt-20 w-full h-full">
-  
         <div className="w-full flex justify-center">
           <div className="md:w-1/4 bg-[#F4F4F4] mr-10 rounded-2xl px-4 hidden md:flex overflow-hidden ">
             <CourseSideBar />
@@ -52,7 +64,7 @@ const index = (props: Props) => {
                         <dt className="text-base leading-6 text-gray-600">
                           {stat.name}
                         </dt>
-                        <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 xs:text-5xl">
                           {stat.value}
                         </dd>
                       </div>
@@ -63,16 +75,16 @@ const index = (props: Props) => {
               <div className="admin-table bg-white rounded-1xl w-full">
                 <h1 className="text-3xl font-semibold">List of Students</h1>
                 <div className="mt-2">
-                <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md my-6 w-full">
-                  <input
-                    type="text"
-                    name="username"
-                    className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 px-6 w-full"
-                    placeholder="janesmith"
-                  />
+                  <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 xs:max-w-md my-6 w-full">
+                    <input
+                      type="text"
+                      name="username"
+                      className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 xs:text-sm xs:leading-6 px-6 w-full"
+                      placeholder="janesmith"
+                    />
+                  </div>
                 </div>
-              </div>
-              <AdminTable/>
+                <AdminTable />
               </div>
             </section>
           </div>

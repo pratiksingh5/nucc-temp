@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { Outfit } from 'next/font/google';
+import { Outfit } from "next/font/google";
 import courseFilters from "@/helpers/filters";
 import {
   ChevronDownIcon,
@@ -11,9 +11,9 @@ import {
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
 const outfit = Outfit({
-  weight: '600',
-  subsets: ['latin']
-})
+  weight: "600",
+  subsets: ["latin"],
+});
 
 import Breadcrumb from "./Breadcrumb";
 
@@ -138,7 +138,7 @@ const CourseSideBar = () => {
           <div className="flex items-center">
             <button
               type="button"
-              className="-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 md:hidden"
+              className="-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 xs:ml-6 md:hidden"
               onClick={() => setMobileFiltersOpen(true)}
             >
               <span className="sr-only">Filters</span>
@@ -148,8 +148,15 @@ const CourseSideBar = () => {
         </div>
 
         <section aria-labelledby="products-heading" className=" pt-1">
-        <div className="flex items-center flex-wrap mr-auto">
-          <h2 className={[outfit.className, " text-gray text-sm inline-flex mt-[8%]"].join(" ")}>Filter by</h2>
+          <div className="flex items-center flex-wrap mr-auto">
+            <h2
+              className={[
+                outfit.className,
+                " text-gray text-sm inline-flex mt-[8%]",
+              ].join(" ")}
+            >
+              Filter by
+            </h2>
           </div>
 
           <div className="w-full grid grid-cols-1">

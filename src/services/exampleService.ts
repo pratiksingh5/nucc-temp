@@ -1,5 +1,5 @@
-import api from "@/helpers/api"
+import api from "@/helpers/api";
 
 export const FetchExmaple = async () => {
-    return await api.get("/exampleApi")
-}
+  return await api.get("/exampleApi");
+};
