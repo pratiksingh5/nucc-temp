@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import CourseSideBar from "@/components/CouseSidebar";
+import CourseSideBar from "@/components/CourseSidebar";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Outfit } from "next/font/google";
 import Course from "@/components/common/Cards/Course";

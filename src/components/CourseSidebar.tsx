@@ -166,7 +166,7 @@ const CourseSideBar = () => {
                 <Disclosure
                   as="div"
                   key={section.id}
-                  className="border-b border-black py-6"
+                  className="border-b border-[#7D7D7D] border-opacity-[20%] py-6"
                 >
                   {({ open }) => (
                     <>
